@@ -24,14 +24,14 @@ freemarket_sample_47a(Tech Expert Final topic, Copy existing site)
 
 
 ## Description
-- New user registration, login, logout
-- Product listing, edit, delete
-- Product list display, details display
-- Credit card registration, product purchase
-- Category, brand function
-- Slide show
-- Breadcrumb
-- Product Search
+- New user registration, login, logout-Access restriction by bot by recaptcha. Login with facebook, google account by omniauth (only works in local environment)
+- Product listing, edit, delete-Product images can be posted by multiple images simultaneously, selected by drag and drop
+- Product list display, details display-The list page (top page) shows specific categories and brands. Products can be purchased from the detail page
+- Credit card registration, product purchase-Implements payment function using payjp
+- Category, brand function-The category and brand are linked to the product but can not be used in the search
+- Slide show-Implement slide on top page
+- Breadcrumb-Implement breadcrumbs using gretel
+- Product Search-I used ransack. You can search by keyword from the header search window
 
 ## データベース設計
 This README would normally document whatever steps are necessary to get the
