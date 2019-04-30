@@ -1,4 +1,38 @@
 # README
+Name
+====
+freemarket_sample_47a(Tech Expert Final topic, Copy existing site)
+
+## Demo
+![メルカリログイン3](https://user-images.githubusercontent.com/47352093/56954167-1e97f200-6b79-11e9-9e59-c37dc10f5913.gif)
+
+[![Image from Gyazo](https://i.gyazo.com/3fb49983a9d7ccd378c1109ea90e7878.gif)](https://gyazo.com/3fb49983a9d7ccd378c1109ea90e7878)
+
+[![Image from Gyazo](https://i.gyazo.com/8bfe646471e574213063e7abc87258ae.gif)](https://gyazo.com/8bfe646471e574213063e7abc87258ae)
+
+[![Image from Gyazo](https://i.gyazo.com/fad84f989502dd758e93cde95e0e3936.gif)](https://gyazo.com/fad84f989502dd758e93cde95e0e3936)
+
+## Overview
+- New user registration, login, logout
+- Product listing, edit, delete
+- Product list display, details display
+- Credit card registration, product purchase
+- Category, brand function
+- Slide show
+- Breadcrumb
+- Product Search
+
+
+## Description
+- New user registration, login, logout
+- Product listing, edit, delete
+- Product list display, details display
+- Credit card registration, product purchase
+- Category, brand function
+- Slide show
+- Breadcrumb
+- Product Search
+
 ## データベース設計
 This README would normally document whatever steps are necessary to get the
 application up and running.
