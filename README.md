@@ -1,5 +1,5 @@
 # README
-###データベース設計
+## データベース設計
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
@@ -13,7 +13,7 @@ Rails 5.0.7.2
 * DB設計補足
 uservaluationsテーブル、commentsテーブル、brandsテーブルは構想のみ。
 
-## usersテーブル
+### usersテーブル
 
 |Column|Type|Options|
 |------|----|-------|
@@ -33,7 +33,7 @@ uservaluationsテーブル、commentsテーブル、brandsテーブルは構想�
 
 <!-- passより下のカラムはdeviseで自動で作成される -->
 
-### Association
+#### Association
 - has_many :items
 - has_many :trades
 - has_many :cards
@@ -43,7 +43,7 @@ uservaluationsテーブル、commentsテーブル、brandsテーブルは構想�
 - has_one  :phonenumber,dependent: :destroy
 - has_many :snsCredentials, dependent: :destroy
 
-## SnsCredentialsテーブル
+### SnsCredentialsテーブル
 
 |Column|Type|Options|
 |------|----|-------|
@@ -51,10 +51,10 @@ uservaluationsテーブル、commentsテーブル、brandsテーブルは構想�
 |uid|string|
 |user|references|
 
-### Association
+#### Association
 - belongs_to :user
 
-## cardsテーブル
+### cardsテーブル
 
 |Column|Type|Options|
 |------|----|-------|
@@ -62,10 +62,10 @@ uservaluationsテーブル、commentsテーブル、brandsテーブルは構想�
 |customer_id|string|
 |user|references|
 
-### Association
+#### Association
 - belongs_to :user
 
-## prefecturesテーブル
+### prefecturesテーブル
 
 |Column|Type|Options|
 |------|----|-------|
@@ -74,7 +74,7 @@ uservaluationsテーブル、commentsテーブル、brandsテーブルは構想�
 
 - active hashのみ使用
 
-## profilesテーブル
+### profilesテーブル
 
 |Column|Type|Options|
 |------|----|-------|
@@ -91,10 +91,10 @@ uservaluationsテーブル、commentsテーブル、brandsテーブルは構想�
 |prefecture|string|
 |phonenumber|string|
 
-### Association
+#### Association
 - belongs_to :user
 
-## phonenumbersテーブル
+### phonenumbersテーブル
 
 |Column|Type|Options|
 |------|----|-------|
@@ -102,10 +102,10 @@ uservaluationsテーブル、commentsテーブル、brandsテーブルは構想�
 |user|references|
 
 
-### Association
+#### Association
 - belongs_to :user
 
-## itemsテーブル
+### itemsテーブル
 
 |Column|Type|Options|
 |------|----|-------|
@@ -121,7 +121,7 @@ uservaluationsテーブル、commentsテーブル、brandsテーブルは構想�
 
 <!-- saizuはsizeのこと。予約語回避のため -->
 
-### Association
+#### Association
 - belongs_to :user
 - has_one  :trade
 - has_many :images
@@ -130,7 +130,7 @@ uservaluationsテーブル、commentsテーブル、brandsテーブルは構想�
 - accepts_nested_attributes_for :images,allow_destroy: true
 - accepts_nested_attributes_for :trade,update_only: true
 
-## tradesテーブル
+### tradesテーブル
 
 |Column|Type|Options|
 |------|----|-------|
@@ -143,22 +143,22 @@ uservaluationsテーブル、commentsテーブル、brandsテーブルは構想�
 
 <!-- postage(配送料の負担),delivery(配送方法),region(発送元地域),shipping_date(発送までの日数) -->
 
-### Association
+#### Association
 - belongs_to :item, optional: true
 - belongs_to :buyer,class_name: "User",optional: true
 
 
-## imagesテーブル
+### imagesテーブル
 
 |Column|Type|Options|
 |------|----|-------|
 |item|references|    |
 |image|string|    |
 
-### Association
+#### Association
 - belongs_to :item, optional: true
 
-## categorysテーブル
+### categorysテーブル
 
 |Column|Type|Options|
 |------|----|-------|
@@ -166,22 +166,22 @@ uservaluationsテーブル、commentsテーブル、brandsテーブルは構想�
 |parent|references|    |
 
 
-### Association
+#### Association
 - belongs_to :parent, class_name: :Category, optional: true
 - has_many :children, class_name: :Category, foreign_key: :parent_id
 
-## brandsテーブル
+### brandsテーブル
 
 |Column|Type|Options|
 |------|----|-------|
 |name|string|null: false,index: true|
 
 
-### Association
+#### Association
 - has_many :items
 
 
-## commentsテーブル
+### commentsテーブル
 
 |Column|Type|Options|
 |------|----|-------|
@@ -189,11 +189,11 @@ uservaluationsテーブル、commentsテーブル、brandsテーブルは構想�
 |item|references|      |
 |text|text|null: false|
 
-### Association
+#### Association
 - belongs_to :item
 - belongs_to :user
 
-## uservaluationsテーブル
+### uservaluationsテーブル
 
 |Column|Type|Options|
 |------|----|-------|
@@ -201,7 +201,13 @@ uservaluationsテーブル、commentsテーブル、brandsテーブルは構想�
 |evaluater|references|    |
 |kind|string|    |
 
-### Association
+#### Association
 - belongs_to :evaluateduser, class_name: "User"
 - belongs_to :evaluater, class_name: "User"
+
+## Author
+[usualpn0221](https://github.com/usualpn0221) </br>
+[syoji-haruki](https://github.com/syoji-haruki) </br>
+[orangina92](https://github.com/orangina92) </br>
+[takumiKATAOKA](https://github.com/TakumiKATAOKA)
 
