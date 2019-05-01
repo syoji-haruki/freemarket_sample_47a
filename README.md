@@ -33,6 +33,9 @@ freemarket_sample_47a(Tech Expert Final topic, Copy existing site)
 - Breadcrumb-Implement breadcrumbs using gretel
 - Product Search-I used ransack. You can search by keyword from the header search window
 
+## Development period
+About 4 weeks
+
 ## データベース設計
 This README would normally document whatever steps are necessary to get the
 application up and running.
