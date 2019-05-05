@@ -1,7 +1,7 @@
 # README
 Name
 ====
-freemarket_sample_47a(Tech Expert Final topic, Copy existing site)
+freemarket_sample(Tech Expert Final topic, Copy existing site)
 
 ## Demo
 ![メルカリログイン3](https://user-images.githubusercontent.com/47352093/56954167-1e97f200-6b79-11e9-9e59-c37dc10f5913.gif)
